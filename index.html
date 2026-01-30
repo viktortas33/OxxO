@@ -29,7 +29,7 @@
                             <th class="col-2">Importe</th>
                         </tr>
                         <tr v-for="(datos, index) in lista" :key="index">
-                            <td><button class="btn" @click="borrar(index)"><img src="../img/bote-de-basura.png" style="width: 30px;" alt="Bote-de-basura"></button></td>
+                            <td><button class="btn" @click="borrar(index)"><img src="img/bote-de-basura.png" style="width: 30px;" alt="Bote-de-basura"></button></td>
                             <td>
                                 <button class="btn btn-primary" @click="datos.cantidad++">+</button>
                                 <input type="number" v-model="datos.cantidad" readonly>
